@@ -11,7 +11,7 @@ This is an R Markdown document.
 
 ###Loading and preprocessing the data
 
-```{r message=FALSE, warning=FALSE, fig.path='Figs/', echo=TRUE}
+```{r message=FALSE, warning=FALSE, fig.path='Figs/', fig.show="asis", echo=TRUE}
 library(plyr)
 library(Hmisc)
 library(dplyr)
