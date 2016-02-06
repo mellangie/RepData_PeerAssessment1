@@ -4,6 +4,7 @@ author: "Angela Maria Marin A."
 date: "4 de febrero de 2016"
 output: 
   html_document: 
+    fig_caption: yes
     keep_md: yes
 ---
 

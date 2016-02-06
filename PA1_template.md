@@ -42,7 +42,7 @@ steps_by_day<-ddply(file2, .(date), summarize, Steps = sum(steps))
 hist(steps_by_day$Steps, main="Steps by day", xlab="Steps", ylab="Day", col="blue")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-5-1.png)
+![](PA1_template_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
 
 3. Calculate and report the mean and median of the total number of steps taken per day
 
@@ -75,7 +75,7 @@ activity_pattern<-ddply(file2, .(interval), summarize, Mean_Steps = mean(steps))
 plot(activity_pattern$interval,activity_pattern$Mean_Steps, type="l", xlab="5-minute interval", ylab="Average steps", col="blue")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-7-1.png)
+![](PA1_template_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
 
 2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -126,7 +126,7 @@ steps_by_day_all<-ddply(ValueMiss, .(date), summarize, Steps = sum(imputed))
 hist(steps_by_day_all$Steps, main="Steps by day", xlab="Steps", ylab="Day", col="blue")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-12-1.png)
+![](PA1_template_files/figure-html/unnamed-chunk-12-1.png)<!-- -->
 
 ```r
 # The mean with imputed value missing
@@ -203,4 +203,4 @@ qplot(
   facet_wrap(~ typeDay, ncol = 1)
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-14-1.png)
+![](PA1_template_files/figure-html/unnamed-chunk-14-1.png)<!-- -->
