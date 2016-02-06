@@ -6,6 +6,13 @@ This is an R Markdown document.
 
 ###Loading and preprocessing the data
 
+
+```r
+library(plyr)
+library(Hmisc)
+library(dplyr)
+```
+
 1. Load the data (i.e. read.csv())
 
 
@@ -23,13 +30,6 @@ file2<-na.omit(file)
 ###What is mean total number of steps taken per day?
 
 1. Calculate the total number of steps taken per day
-
-
-```r
-library(plyr)
-library(Hmisc)
-library(dplyr)
-```
 
 
 ```r

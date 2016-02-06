@@ -70,6 +70,9 @@ img {
 <p>This is an R Markdown document.</p>
 <div id="loading-and-preprocessing-the-data" class="section level3">
 <h3>Loading and preprocessing the data</h3>
+<pre class="r"><code>library(plyr)
+library(Hmisc)
+library(dplyr)</code></pre>
 <ol style="list-style-type: decimal">
 <li>Load the data (i.e. read.csv())</li>
 </ol>
@@ -84,9 +87,6 @@ img {
 <ol style="list-style-type: decimal">
 <li>Calculate the total number of steps taken per day</li>
 </ol>
-<pre class="r"><code>library(plyr)
-library(Hmisc)
-library(dplyr)</code></pre>
 <pre class="r"><code>steps_by_day&lt;-ddply(file2, .(date), summarize, Steps = sum(steps))</code></pre>
 <ol start="2" style="list-style-type: decimal">
 <li>Make a histogram of the total number of steps taken each day</li>
